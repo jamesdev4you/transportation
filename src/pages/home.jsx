@@ -1,18 +1,16 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Menu from './menu';
-import Ferrari from '../assets/ferrari.jpg'
+import Ferrari from '../assets/ferrari.jpg';
+import Header from '../components/header.jsx';
 
 const home = () => {
   return (
-    <Box sx={{width: '100%', height: '100vh', backgroundImage: `url(${Ferrari})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    }}>
-        <Menu />
-    </Box>
-  )
-}
+    <>
+      <Menu />
+      <Header />
+    </>
+  );
+};
 
-export default home
+export default home;

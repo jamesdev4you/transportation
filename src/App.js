@@ -1,17 +1,17 @@
 import React from 'react';
 import Home from './pages/home';
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   shape: {
     pillRadius: 50,
   },
   palette: {
-    primary: { main: "#000000" },
+    primary: { main: '#F4D800' },
     secondary: {
-      main: "#FFFFFF",
+      main: '#050707',
     },
-    error: { main: "#ffd700" },
+    error: { main: '#ffd700' },
   },
   breakpoints: {
     values: {

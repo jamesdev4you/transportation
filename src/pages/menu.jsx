@@ -23,7 +23,6 @@ const navItems = [
   { text: 'Contact', href: '/contact' },
 ];
 
-
 export default function Menu() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -60,10 +59,10 @@ export default function Menu() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1,}}>
+    <Box sx={{ flexGrow: 1 }}>
       <CssBaseline />
       <AppBar component='nav'>
-        <Toolbar>
+        <Toolbar sx={{ backgroundColor: '#050707' }}>
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -98,7 +97,7 @@ export default function Menu() {
               marginLeft: 'auto',
             }}
           >
-          {/*
+            {/*
             {navItems.map((item) => (
               <NavLink
                 className='menu_link'
@@ -127,7 +126,7 @@ export default function Menu() {
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              backgroundColor: 'primary.main',
+              backgroundColor: 'secondary.main',
             },
           }}
         >
